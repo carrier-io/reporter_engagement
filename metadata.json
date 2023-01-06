@@ -2,6 +2,6 @@
   "name": "Carrier Engagement Reporter Plugin",
   "version": "0.1",
   "module": "plugins.reporter_engagement",
-  "depends_on": ["integrations"],
+  "depends_on": ["integrations", "engagements"],
   "init_after": []
 }
