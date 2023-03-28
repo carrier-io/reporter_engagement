@@ -12,7 +12,8 @@ window['reporters_reporter_engagement'] = {
         $('#selector_reporter_engagement').collapse('show')
     },
     clear_data: () => {
-        reporters_reporter_engagement.$select().val('info').selectpicker('refresh')
+        default_integration = $('.security_integration_item').data('selected-integration')
+        reporters_reporter_engagement.$select().val(default_integration).selectpicker('refresh')
         reporters_reporter_engagement.$el().prop('checked', false)
         $('#selector_reporter_engagement').collapse('hide')
     }
